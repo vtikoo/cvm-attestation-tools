@@ -1,6 +1,5 @@
 function Install-Chocolatey {
     Write-Output "Starting Install-Chocolatey..."
-    $env:chocolateyVersion = '1.4.0'
     [Net.ServicePointManager]::SecurityProtocol = [Net.SecurityProtocolType]::Tls12
     Set-ExecutionPolicy Bypass -Scope Process -Force
     Invoke-Expression ((New-Object System.Net.WebClient).DownloadString('https://chocolatey.org/install.ps1'))
